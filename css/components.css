@@ -1,0 +1,5 @@
+.main_button {
+    border: var(--border_normal) solid;
+    background: var(--main_green);
+    padding: var(--padding-m);
+}
