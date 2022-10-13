@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) {
+    :root {
+        --page-container: calc(100% - 2.5rem);
+    }
+
+    body {
+        background: gray;
+    }
+
+    .grid-two-col {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-four-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

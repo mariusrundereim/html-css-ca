@@ -3,35 +3,94 @@
 }
 
 :root {
-
-    /* Brand Colors */
-    --main_green: #92E596;
-    --main_green-dark: #4B5E6F;
-    --main_pink: #FF9094;
-    --main_pink-dark: #6A435A;
-
-    /* Styling */
-    --main_grey1: #979797;
-    --main_grey2: #D2DBE3;
-
-    /* Fontstyles */
-    --heading-xl: clamp(1.8rem, 2.5vw, 4rem); /* Heading 1*/
-    --text-sm: clamp(0.7rem, 2.5vw, 1.2rem); /* Paragraphs */
-
-    /* Padding */
-    --padding-xl: 2rem;
-    --padding-m: 1rem;
-    --padding-sm: 0.5rem;
-
-    /* Border */
-    --border_normal: 3px;
-
-
+        /* Brand Colors */
+        --main_green: #92E596;
+        --main_green-dark: #4B5E6F;
+        --main_pink: #FF9094;
+        --main_pink-dark: #6A435A;
+    
+        /* Styling */
+        --main_grey1: #979797;
+        --main_grey2: #D2DBE3;
+    
+        /* Fontstyles */
+        --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
+        --text-sm: clamp(0.7rem, 2.5vw, 1.1rem); /* Paragraphs */
+    
+        /* Padding */
+        --padding-xl: 2rem;
+        --padding-m: 1rem;
+        --padding-sm: 0.5rem;
+    
+        /* Border */
+        --border_normal: 3px;
+    
+        /* Width */
+        --page-container: calc(100% - 10rem);
+    
+        /* Height */
+        --page-container-height: clamp(5rem, 2.5vw, 5.5rem);
 }
+
+
+
+
 
 body {
     font-family: 'Heebo', sans-serif;
 }
+
+.page-container {
+    border: 1px red dashed;
+    width: var(--page-container);
+    margin: 0 auto;
+}
+
+header {
+    background: var(--main_green-dark);
+    min-height: var(--page-container-height);
+    /*min-height: 5.5rem;*/
+}
+
+/***** COLORS *****/
+
+
+.main_green-color { /* Green */
+    color: var(--main_green); 
+}
+
+.main_green-bg-color {
+    background: var(--main_green);
+}
+
+
+.main_green-dark-color { /* Green Dark */
+    color: var(--main_green-dark);
+}
+
+.main_green-dark-bg-color {
+    background: var(--main_green-dark);
+}
+
+
+.main_pink-color { /* Pink */
+    color: var(--main_pink);
+}
+
+.main_pink-bg-color {
+    background: var(--main_pink);
+}
+
+
+.main_pink-dark-color { /* Pink Dark */
+    color: var(--main_pink-dark);
+}
+
+.main_pink-dark-bg-color {
+    background: var(--main_pink-dark);
+}
+
+
 
 /* FLEXBOX */
 
@@ -53,6 +112,12 @@ body {
     gap: var(--padding-sm);
 }
 
+.grid-four-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padding-sm);
+}
+
 /* ALIGNMENT */
 
 .centering {
@@ -62,20 +127,37 @@ body {
 }
 
 
-/* Fontstyles */
 
-.heading-xl {
-    font-size: var(--heading-xl, 40px);
+/********************* GLOBAL *********************/
+/********************* HOMEPAGE *********************/
+
+.product-men-image {
+    width: 100%;
+    min-height: 25rem;
+    background-image: url(/images/products/product-promo-men.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.text-sm {
-    font-size: var(--text-sm, 20px);
+.product-women-image {
+    width: 100%;
+    min-height: 25rem;
+    background-image: url(/images/products/product-promo-women.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.pic-small {
-    width: 10rem;
-} 
-
-.hover-scale {
-    scale: 1.4rem;
+.product-women-image::after{
+    content: '';
+    background-color: #4B5E6F;
+    height: 20px;
+    width: 100%;
 }
+
+/********************* LIST OF JACKETS *********************/
+/********************* SINGLE PRODUCT *********************/
+/********************* CHECKOUT *********************/
+/********************* ABOUT *********************/
+/********************* CONTACT *********************/
