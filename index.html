@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/fontstyles.css">
     <link rel="stylesheet" href="/css/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,31 +19,52 @@
 </head>
 <body>
     <header>
-        <section class="page-container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="components.html">Components</a></li>
+        <section class="page-container flex-col-hor flex-align-space">
+            <img class="page-logo" src="/images/rainydays-logo.svg" href="index.html" alt="rainydays-logo">
+            <nav class="flex-col-hor">
+                <ul class="flex-col-hor gap-1">
+                    <li><a class="pagelinks" href="index.html">Men</a></li>
+                    <li><a class="pagelinks" href="#">Women</a></li>
+                </ul>
+                <ul class="flex-col-hor gap-1">
+                    <li><a class="pagelinks" href="#">About</a></li>
+                    <li><a class="pagelinks" href="#">Contact</a></li>
                 </ul>
             </nav>
+            <article>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </article>
         </section>
     </header>
 
-    
-    <section class="page-container grid-two-col">
-        <article class="home-product-men">
-            <section class="product-title">
-                <h2 class="heading-uppercase-xl main_green-dark-color">Men</h2>
-            </section>
-            <a href="#"><section class="product-men-image"></section></a>
-            
-        </article>
-        <article class="home-product-women">
-            <section class="product-title">
-                <h2 class="heading-uppercase-xl main_green-dark-color">Women</h2>
-            </section>
-            <a href="#"><section class="product-women-image"></section></a>
-        </article>
+    <section class="page-container">
+        <section class="slider-container">
+            <div class="slider-img">
+                <img src="/images/slider-img-sm-1.jpg" alt="hiking picture">
+                <img src="/images/slider-img-sm-2.jpg" alt="skiing picture">
+                <img src="/images/slider-img-sm-3.jpg" alt="camping picture">
+            </div>
+        </section>
+        <section class="grid-two-col">
+            <article class="home-product-men">
+                <section class="product-title">
+                    <h2 class="heading-uppercase-xl main_green-dark-color">Men Jackets</h2>
+                </section>
+                <a href="#"><section class="product-men-image"></section></a>
+                
+            </article>
+            <article class="home-product-women">
+                <section class="product-title">
+                    <h2 class="heading-uppercase-xl main_green-dark-color">Women Jackets</h2>
+                </section>
+                <a href="#"><section class="product-women-image"></section></a>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Our Brands</h2>
+            </article>
+        </section>
     </section>
 
 </body>
