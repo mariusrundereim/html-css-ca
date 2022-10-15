@@ -1,11 +1,9 @@
 @media screen and (max-width: 800px) {
     :root {
         --page-container: calc(100% - 2.5rem);
+        --scaling: 0.8;
     }
 
-    body {
-        background: gray;
-    }
 
     .grid-two-col {
         grid-template-columns: repeat(1, 1fr);

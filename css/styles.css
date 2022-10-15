@@ -21,6 +21,7 @@
 
 
         --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
+        --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
         --text-sm: clamp(0.7rem, 2.5vw, 1.1rem); /* Paragraphs */
         --p-links: 1.25rem;
     
@@ -38,10 +39,13 @@
         --gap_3: 3rem;
     
         /* Width */
-        --page-container: calc(100% - 10rem);
+        --page-container: calc(100% - 8rem);
     
         /* Height */
         --page-container-height: clamp(5rem, 2.5vw, 5.5rem);
+
+        /* Scale*/
+        --scaling: 1;
 }
 
 body {
@@ -89,6 +93,23 @@ body {
     background: var(--main_pink-dark);
 }
 
+.c-white {
+    color: var(--c-white);
+}
+
+/* Padding */
+
+.pad-small {
+    padding: 0.5rem;
+}
+
+.pad-medium {
+    padding: 1rem;
+}
+
+.pad-large {
+    padding: 2rem;
+}
 
 /* Gap */
 
@@ -137,9 +158,9 @@ body {
 
 /* ALIGNMENT */
 
-.centering {
+.grid-center {
     display: grid;
-    align-content: center;
+    align-items: center;
     justify-items: center;
 }
 
@@ -171,6 +192,21 @@ header {
     /*min-height: 5.5rem;*/
 }
 
+/*** Footer ***/
+
+footer {
+    background: var(--main_green-dark);
+    min-height: 25rem;
+}
+
+.newsletter {
+    border: var(--main_green) var(--border_normal) solid;
+}
+
+.social-box {
+    background-color: var(--main_grey1);
+}
+
 
 /********************* HOMEPAGE *********************/
 
@@ -192,12 +228,25 @@ header {
     background-repeat: no-repeat;
 }
 
-.product-women-image::after{
-    content: '';
-    background-color: #4B5E6F;
-    height: 20px;
+
+.image-prop {
     width: 100%;
+    min-height: 25rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.men-image {
+    background-image: url(/images/products/product-promo-men.jpg);
+}
+
+.women-image {
+    background-image: url(/images/products/product-promo-women.jpg);
+}
+
+
+
 
 /* Slideshow */
 
@@ -243,6 +292,31 @@ header {
 .slider-container > .slider-img > img {
     width: 100%;
 }
+
+.ourbrands {
+    background-color: var(--main_grey2);
+    padding: var(--padding-xl);
+    min-height: 12rem;
+    transition: 300ms ease;
+}
+
+.ourbrands:hover {
+    background-color: var(--main_grey1);
+}
+
+.brand-logo{
+    scale: 1;
+    transition: 300ms ease;
+}
+
+.brand-logo:hover {
+    scale: 1.2;
+}
+
+.brand-logo-scale {
+    scale: var(--scaling);
+}
+
 
 /********************* LIST OF JACKETS *********************/
 /********************* SINGLE PRODUCT *********************/
