@@ -1,265 +1,250 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-        /* Brand Colors */
-        --main_green: #92E596;
-        --main_green-dark: #4B5E6F;
-        --main_pink: #FF9094;
-        --main_pink-dark: #6A435A;
+  /* Brand Colors */
+  --main_green: #92e596;
+  --main_green-dark: #4b5e6f;
+  --main_pink: #ff9094;
+  --main_pink-dark: #6a435a;
 
-        --main_grey1: #979797;
-        --main_grey2: #D2DBE3;
-        --c-white: #ffffff;
+  --main_grey1: #979797;
+  --main_grey2: #d2dbe3;
+  --c-white: #ffffff;
 
-    
-        /* Fontstyles */
-        --font-1: 'Akshar', sans-serif;
-        --font-2: 'Heebo', sans-serif;
+  /* Fontstyles */
+  --font-1: "Akshar", sans-serif;
+  --font-2: "Heebo", sans-serif;
 
+  --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
+  --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
+  --text-sm: clamp(0.7rem, 2.5vw, 1.1rem); /* Paragraphs */
+  --p-links: 1.25rem;
 
-        --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
-        --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
-        --text-sm: clamp(0.7rem, 2.5vw, 1.1rem); /* Paragraphs */
-        --p-links: 1.25rem;
-    
-        /* Padding */
-        --padding-xl: 2rem;
-        --padding-m: 1rem;
-        --padding-sm: 0.5rem;
-    
-        /* Border */
-        --border_normal: 3px;
+  /* Padding */
+  --padding-xl: 2rem;
+  --padding-m: 1rem;
+  --padding-sm: 0.5rem;
 
-        /* Gap */
-        --gap_1: 1rem;
-        --gap_2: 2rem;
-        --gap_3: 3rem;
-    
-        /* Width */
-        --page-container: calc(100% - 8rem);
-    
-        /* Height */
-        --page-container-height: clamp(5rem, 2.5vw, 5.5rem);
+  /* Border */
+  --border_normal: 3px;
 
-        /* Scale*/
-        --scaling: 1;
+  /* Gap */
+  --gap_1: 1rem;
+  --gap_2: 2rem;
+  --gap_3: 3rem;
+
+  /* Width */
+  --page-width: calc(100% - 8rem);
+
+  /* Height */
+  --page-container-height: clamp(5rem, 2.5vw, 5.5rem);
+
+  /* Scale*/
+  --scaling: 1;
 }
 
 body {
-    font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
-
-
-
 
 /***** COLORS *****/
 
-
-.main_green-color { /* Green */
-    color: var(--main_green); 
+.main_green-color {
+  /* Green */
+  color: var(--main_green);
 }
 
 .main_green-bg-color {
-    background: var(--main_green);
+  background: var(--main_green);
 }
 
-
-.main_green-dark-color { /* Green Dark */
-    color: var(--main_green-dark);
+.main_green-dark-color {
+  /* Green Dark */
+  color: var(--main_green-dark);
 }
 
 .main_green-dark-bg-color {
-    background: var(--main_green-dark);
+  background: var(--main_green-dark);
 }
 
-
-.main_pink-color { /* Pink */
-    color: var(--main_pink);
+.main_pink-color {
+  /* Pink */
+  color: var(--main_pink);
 }
 
 .main_pink-bg-color {
-    background: var(--main_pink);
+  background: var(--main_pink);
 }
 
-
-.main_pink-dark-color { /* Pink Dark */
-    color: var(--main_pink-dark);
+.main_pink-dark-color {
+  /* Pink Dark */
+  color: var(--main_pink-dark);
 }
 
 .main_pink-dark-bg-color {
-    background: var(--main_pink-dark);
+  background: var(--main_pink-dark);
 }
 
 .c-white {
-    color: var(--c-white);
+  color: var(--c-white);
 }
 
 /* Padding */
 
 .pad-small {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .pad-medium {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .pad-large {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 /* Gap */
 
 .gap-1 {
-    gap: var(--gap_1);
+  gap: var(--gap_1);
 }
 
 .gap-2 {
-    gap: var(--gap_2);
+  gap: var(--gap_2);
 }
 
 .gap-3 {
-    gap: var(--gap_3);
+  gap: var(--gap_3);
 }
 
 /* FLEXBOX */
 
 .flex-col-hor {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-col-ver {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-align-space {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* GRID */
 
 .grid-two-col {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--padding-sm);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--padding-sm);
 }
 
 .grid-four-col {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--padding-sm);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--padding-sm);
 }
 
 /* ALIGNMENT */
 
 .grid-center {
-    display: grid;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
-
-
 
 /********************* GLOBAL *********************/
 
 /*** Header ***/
 
 .page-logo {
-    width: 10rem;
+  width: 10rem;
 }
 
 nav > ul > li {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
-
-.page-container {
-    border: 1px red dashed;
-    width: var(--page-container);
-    margin: 0 auto;
+.page-width {
+  border: 1px red dashed;
+  width: var(--page-width);
+  margin: 0 auto;
 }
 
 header {
-    background: var(--main_green-dark);
-    min-height: var(--page-container-height);
-    /*min-height: 5.5rem;*/
+  background: var(--main_green-dark);
 }
 
 /*** Footer ***/
 
 footer {
-    background: var(--main_green-dark);
-    min-height: 25rem;
+  background: var(--main_green-dark);
+  min-height: 25rem;
 }
 
 .newsletter {
-    border: var(--main_green) var(--border_normal) solid;
+  border: var(--main_green) var(--border_normal) solid;
 }
 
 .social-box {
-    background-color: var(--main_grey1);
+  background-color: var(--main_grey1);
 }
-
 
 /********************* HOMEPAGE *********************/
 
 .product-men-image {
-    width: 100%;
-    min-height: 25rem;
-    background-image: url(/images/products/product-promo-men.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  min-height: 25rem;
+  background-image: url(/images/products/product-promo-men.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .product-women-image {
-    width: 100%;
-    min-height: 25rem;
-    background-image: url(/images/products/product-promo-women.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  min-height: 25rem;
+  background-image: url(/images/products/product-promo-women.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
 .image-prop {
-    width: 100%;
-    min-height: 25rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  min-height: 25rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .men-image {
-    background-image: url(/images/products/product-promo-men.jpg);
+  background-image: url(/images/products/product-promo-men.jpg);
 }
 
 .women-image {
-    background-image: url(/images/products/product-promo-women.jpg);
+  background-image: url(/images/products/product-promo-women.jpg);
 }
-
-
-
 
 /* Slideshow */
 
 .slider-container {
-    width: 100%;
-    min-height: 10rem;
-    overflow: hidden;
+  width: 100%;
+  min-height: 10rem;
+  overflow: hidden;
 }
 
 .slider-img {
-    width: 100%;
-    display: flex;
-    animation: slide 20s infinite;
+  width: 100%;
+  display: flex;
+  animation: slide 20s infinite;
 }
 /*
 @keyframes slide {
@@ -290,33 +275,32 @@ footer {
 }*/
 
 .slider-container > .slider-img > img {
-    width: 100%;
+  width: 100%;
 }
 
 .ourbrands {
-    background-color: var(--main_grey2);
-    padding: var(--padding-xl);
-    min-height: 12rem;
-    transition: 300ms ease;
+  background-color: var(--main_grey2);
+  padding: var(--padding-xl);
+  min-height: 12rem;
+  transition: 300ms ease;
 }
 
 .ourbrands:hover {
-    background-color: var(--main_grey1);
+  background-color: var(--main_grey1);
 }
 
-.brand-logo{
-    scale: 1;
-    transition: 300ms ease;
+.brand-logo {
+  scale: 1;
+  transition: 300ms ease;
 }
 
 .brand-logo:hover {
-    scale: 1.2;
+  scale: 1.2;
 }
 
 .brand-logo-scale {
-    scale: var(--scaling);
+  scale: var(--scaling);
 }
-
 
 /********************* LIST OF JACKETS *********************/
 /********************* SINGLE PRODUCT *********************/
