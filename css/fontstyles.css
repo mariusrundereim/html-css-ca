@@ -15,6 +15,12 @@
     font-family: 'Akshar', sans-serif;
 }
 
+.heading-uppercase-m {
+    font-size: var(--heading-m, 40px);
+    text-transform: uppercase;
+    font-family: 'Akshar', sans-serif;
+}
+
 .text-sm {
     font-size: var(--text-sm, 20px);
 }

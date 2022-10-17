@@ -13,6 +13,7 @@
   --main_grey1: #979797;
   --main_grey2: #d2dbe3;
   --c-white: #ffffff;
+  --c-dark: #131414;
 
   /* Fontstyles */
   --font-1: "Akshar", sans-serif;
@@ -20,6 +21,7 @@
 
   --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
   --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
+  --heading-m: clamp(1.1rem, 2.5vw, 1.4rem); /* Heading 3*/
   --text-sm: clamp(0.7rem, 2.5vw, 1.1rem); /* Paragraphs */
   --p-links: 1.25rem;
 
@@ -44,6 +46,9 @@
 
   /* Scale*/
   --scaling: 1;
+
+  /* Transitions */
+  --transition-1: 300ms ease;
 }
 
 body {
@@ -92,6 +97,10 @@ body {
   color: var(--c-white);
 }
 
+.c-dark {
+  color: var(--c-dark);
+}
+
 /* Padding */
 
 .pad-small {
@@ -137,6 +146,13 @@ body {
   align-items: center;
 }
 
+.item-flex {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* GRID */
 
 .grid-two-col {
@@ -148,6 +164,12 @@ body {
 .grid-four-col {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: var(--padding-sm);
+}
+
+.grid-five-col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: var(--padding-sm);
 }
 
@@ -189,12 +211,26 @@ footer {
   min-height: 25rem;
 }
 
+.logo-footer {
+  width: 15rem;
+}
+
 .newsletter {
   border: var(--main_green) var(--border_normal) solid;
 }
 
 .social-box {
-  background-color: var(--main_grey1);
+  padding: var(--padding-m);
+  color: var(--main_grey2);
+  background: transparent;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: var(--transition-1);
+}
+
+.social-box:hover {
+  color: var(--main_green-dark);
+  background: var(--main_green);
 }
 
 /********************* HOMEPAGE *********************/
@@ -303,6 +339,18 @@ footer {
 }
 
 /********************* LIST OF JACKETS *********************/
+
+.product-item {
+  border: 1px orangered dashed;
+  text-decoration: none;
+}
+
+.product-image {
+  max-width: calc(100% - 15rem);
+  min-width: 10rem;
+}
+
+
 /********************* SINGLE PRODUCT *********************/
 /********************* CHECKOUT *********************/
 /********************* ABOUT *********************/
