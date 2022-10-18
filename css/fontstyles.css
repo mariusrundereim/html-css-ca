@@ -35,4 +35,9 @@
     text-transform: uppercase;
     text-decoration: none;
     color: var(--c-white);
+    transition: var(--transition-1);
+}
+
+.pagelinks:hover {
+    color: var(--main_green);
 }
