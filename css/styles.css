@@ -156,6 +156,14 @@ body {
   justify-content: space-between;
 }
 
+.align-item {
+  align-items: center;
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
 /* GRID */
 
 .grid-two-col {
@@ -203,8 +211,13 @@ nav > ul > li {
   margin: 0 auto;
 }
 
-header {
+.primary-header {
   background: var(--main_green-dark);
+}
+
+.header-category {
+  background: var(--main_green-dark);
+  min-height: 10rem;
 }
 
 /*** Footer ***/
@@ -238,7 +251,6 @@ footer {
 
 /********************* HOMEPAGE *********************/
 
-
 .image-prop {
   width: 100%;
   min-height: 25rem;
@@ -268,7 +280,6 @@ footer {
   display: flex;
   animation: slide 20s infinite;
 }
-
 
 /*
 @keyframes slide {
@@ -337,7 +348,6 @@ footer {
   max-width: calc(100% - 15rem);
   min-width: 10rem;
 }
-
 
 /********************* SINGLE PRODUCT *********************/
 /********************* CHECKOUT *********************/
