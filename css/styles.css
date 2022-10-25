@@ -219,9 +219,28 @@ body {
   width: 10rem;
 }
 
+nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
 nav > ul > li {
   list-style: none;
   padding: 0;
+}
+
+.page_men,
+.page_women {
+  margin-left: 0.3rem;
+  color: white;
+  transition: 200ms ease-in;
+  rotate: 0deg;
+}
+
+.page_men:hover,
+.page_women:hover {
+  color: var(--main_green);
+  rotate: 180deg;
 }
 
 .page-width {
@@ -246,7 +265,7 @@ nav > ul > li {
 
 /* Header Category */
 
-.header-category-men,
+/* .header-category-men,
 #page_men {
   display: none;
 }
@@ -261,6 +280,15 @@ nav > ul > li {
 }
 
 #page_women:checked ~ .header-category-women {
+  display: block;
+} */
+
+.header-category-men,
+#page_men {
+  display: none;
+}
+
+#page_men:checked ~ .header-category-men {
   display: block;
 }
 
@@ -411,6 +439,26 @@ footer {
 }
 
 /********************* SINGLE PRODUCT *********************/
+
+.image-product-preview {
+  width: 200px;
+}
+
+.price-tag {
+  background: var(--main_green);
+  display: inline-block;
+  padding: var(--padding-m);
+  font-size: var(--heading-sm);
+  color: var(--c-dark);
+}
+
+/* Color Radio */
+
+#color-green {
+  accent-color: greenyellow;
+  border-color: orange;
+  border: 1px solid red;
+}
 /********************* CHECKOUT *********************/
 /********************* ABOUT *********************/
 /********************* CONTACT *********************/
