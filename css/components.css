@@ -1,7 +1,15 @@
 .main_button {
-    border: var(--border_normal) solid;
-    background: var(--main_green);
-    padding: var(--padding-m);
+  border: var(--border_normal) solid;
+  background: var(--main_green);
+  padding: var(--padding-m);
 }
 
-
+.btn-submit {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main_green-dark);
+  background: var(--main_green);
+  padding: var(--padding-m);
+  border: var(--border_normal) var(--main_green) solid;
+}

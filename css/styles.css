@@ -32,6 +32,7 @@
 
   /* Border */
   --border_normal: 3px;
+  --border_small: 2px;
 
   /* Gap */
   --gap_1: 1rem;
@@ -166,6 +167,11 @@ body {
 
 /* GRID */
 
+.grid-two-col-clean {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-two-col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -192,6 +198,19 @@ body {
   justify-items: center;
 }
 
+.margin-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.margin_down-1 {
+  margin-bottom: 1rem;
+}
+
+.text-align-c {
+  text-align: center;
+}
+
 /********************* GLOBAL *********************/
 
 /*** Header ***/
@@ -215,9 +234,34 @@ nav > ul > li {
   background: var(--main_green-dark);
 }
 
-.header-category {
+.header-category-men {
+  background: var(--main_green-dark);
+  min-height: 10rem;
+}
+
+.header-category-women {
   background: var(--main_pink-dark);
   min-height: 10rem;
+}
+
+/* Header Category */
+
+.header-category-men,
+#page_men {
+  display: none;
+}
+
+#page_men:checked ~ .header-category-men {
+  display: block;
+}
+
+.header-category-women,
+#page_women {
+  display: none;
+}
+
+#page_women:checked ~ .header-category-women {
+  display: block;
 }
 
 /*** Footer ***/
@@ -340,13 +384,30 @@ footer {
 /********************* LIST OF JACKETS *********************/
 
 .product-item {
-  border: 1px orangered dashed;
   text-decoration: none;
 }
 
 .product-image {
   max-width: calc(100% - 15rem);
   min-width: 10rem;
+  padding: 1rem;
+  scale: 1;
+  transition: 300ms ease;
+  transform-origin: center;
+}
+
+.product-image:hover {
+  scale: 1.1;
+}
+
+.item-border {
+  border: var(--border_small) var(--main_grey2) solid;
+}
+
+.product-specs {
+  background: var(--main_green);
+  width: 100%;
+  padding: var(--padding-sm);
 }
 
 /********************* SINGLE PRODUCT *********************/

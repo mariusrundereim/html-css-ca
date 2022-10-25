@@ -27,67 +27,360 @@
   </head>
   <body>
     <header>
-      <section class="page-width flex-col-hor">
+      <section
+        class="primary-header flex-col-hor spacebetween align-item page-width"
+      >
         <img
           class="page-logo"
           src="/images/rainydays-logo.svg"
           href="index.html"
           alt="rainydays-logo"
         />
-        <nav class="flex-col-hor">
-          <ul class="flex-col-hor gap-1">
-            <li><a class="pagelinks" href="listofjackets-men.html">Men</a></li>
-            <li><a class="pagelinks" href="#">Women</a></li>
-          </ul>
-          <ul class="flex-col-hor gap-1">
-            <li><a class="pagelinks" href="#">About</a></li>
-            <li><a class="pagelinks" href="#">Contact</a></li>
+        <nav>
+          <ul>
+            <li>
+              <input type="checkbox" id="page_men" />
+              <label for="page_men">
+                <a class="pagelinks"
+                  >Men<i class="fa-sharp fa-solid fa-chevron-down"></i
+                ></a>
+              </label>
+
+              <input type="checkbox" id="page_women" />
+              <label for="page_women">
+                <a class="pagelinks"
+                  >Women<i class="fa-sharp fa-solid fa-chevron-down"></i
+                ></a>
+              </label>
+
+              <a class="pagelinks">About</a>
+              <a class="pagelinks">Contact</a>
+            </li>
           </ul>
         </nav>
         <i class="fa-solid fa-bag-shopping"></i>
       </section>
+      <!-- Men Category -->
+      <section class="header-category-men">
+        <section class="page-width margin-1">
+          <header>
+            <h1 class="heading-uppercase-xl c-white margin-1">Men</h1>
+          </header>
+          <section class="flex-col-hor spacebetween gap-3">
+            <article class="flex-col-hor gap-2">
+              <h2 class="text-sm c-white">Select by category:</h2>
+              <article class="grid-two-col-clean">
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Down Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Insulation Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white"
+                    >Shell and hiking Jackets</label
+                  >
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Fleece Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Woolen Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Training Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Ski-Cross Jackets</label>
+                </div>
+              </article>
+            </article>
+            <article>
+              <div class="jacket-list-cat">
+                <article class="flex-col-hor gap-2">
+                  <h2 class="text-sm c-white">Select by sport:</h2>
+                  <article class="grid-two-col-clean">
+                    <h3 class="heading-uppercase-l c-white">Outdoor</h3>
+                    <h3 class="heading-uppercase-l c-white">Hiking</h3>
+                    <h3 class="heading-uppercase-l c-white">Exploring</h3>
+                    <h3 class="heading-uppercase-l c-white">Skiing</h3>
+                    <h3 class="heading-uppercase-l c-white">Camping</h3>
+                    <h3 class="heading-uppercase-l c-white">Canoeing</h3>
+                  </article>
+                </article>
+              </div>
+            </article>
+          </section>
+          <button class="btn-submit">Check</button>
+        </section>
+      </section>
+      <!-- Women Category -->
+      <section class="header-category-women">
+        <section class="page-width margin-1">
+          <header>
+            <h1 class="heading-uppercase-xl c-white margin-1">Women</h1>
+          </header>
+          <section class="flex-col-hor spacebetween gap-3">
+            <article class="flex-col-hor gap-2">
+              <h2 class="text-sm c-white">Select by category:</h2>
+              <article class="grid-two-col-clean">
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Down Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Insulation Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white"
+                    >Shell and hiking Jackets</label
+                  >
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Fleece Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Woolen Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Training Jackets</label>
+                </div>
+                <div class="jacket-list">
+                  <input type="checkbox" />
+                  <label for="jacket" class="c-white">Ski-Cross Jackets</label>
+                </div>
+              </article>
+            </article>
+            <article>
+              <div class="jacket-list-cat">
+                <article class="flex-col-hor gap-2">
+                  <h2 class="text-sm c-white">Select by sport:</h2>
+                  <article class="grid-two-col-clean">
+                    <h3 class="heading-uppercase-l c-white">Outdoor</h3>
+                    <h3 class="heading-uppercase-l c-white">Hiking</h3>
+                    <h3 class="heading-uppercase-l c-white">Exploring</h3>
+                    <h3 class="heading-uppercase-l c-white">Skiing</h3>
+                    <h3 class="heading-uppercase-l c-white">Camping</h3>
+                    <h3 class="heading-uppercase-l c-white">Canoeing</h3>
+                  </article>
+                </article>
+              </div>
+            </article>
+          </section>
+          <button class="btn-submit">Check</button>
+        </section>
+      </section>
     </header>
 
-    <main>
-      <section>
-        <h2>Men Jackets</h2>
-        <h4>48 Jackets</h4>
-        <div>
-          <p>Filter</p>
-        </div>
-        <div>
-          View
-        </div>
+    <main class="page-width">
+      <section class="flex-col-hor spacebetween">
+        <header class="flex-col-hor align-item gap-2">
+          <h2 class="heading-uppercase-xl main_green-dark-color">
+            Men Jackets
+          </h2>
+          <h4 class="heading-uppercase-m main_green-dark-color">48 Jackets</h4>
+        </header>
+        <aside class="flex-col-hor align-item gap-2">
+          <i class="fa-solid fa-filter"></i>
+          <i class="fa-sharp fa-solid fa-table-cells-large"></i>
+        </aside>
       </section>
       <article class="grid-four-col">
+        <!-- Item -->
         <article>
-          <a class="product-item flex-col-ver item-flex" href="#">
-            <img class="product-image" src="/images/products/RainyDays_Jacket1.png" alt="product image">
-          <h2 class="heading-uppercase-l main_green-color">Bergen</h2>
-          <p class="text-sm">Cross-Country Jacket</p>
-          <h4 class="heading-uppercase-m">1400,- NOK</h4>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
           </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
+        <!-- Item -->
         <article class="product-item">
-          <p>Product Item</p>
+          <a class="product-item flex-col-ver item-flex item-border" href="#">
+            <img
+              class="product-image"
+              src="/images/products/RainyDays_Jacket1.png"
+              alt="product image"
+            />
+            <h2 class="heading-uppercase-l main_green-dark-color">Bergen</h2>
+            <p class="text-sm main_green-dark-color margin_down-1">
+              Cross-Country Jacket
+            </p>
+            <h4 class="heading-uppercase-m main_green-dark-color margin_down-1">
+              1400,- NOK
+            </h4>
+            <div class="product-specs">
+              <h4 class="text-uppercase-sm main_green-dark-color text-align-c">
+                Product Specs
+              </h4>
+            </div>
+          </a>
         </article>
       </article>
     </main>
@@ -95,7 +388,11 @@
     <footer class="grid-center">
       <section class="page-width grid-two-col">
         <section>
-          <img class="logo-footer" src="/images/rainydays-logo-green.svg" alt="logo green" />
+          <img
+            class="logo-footer"
+            src="/images/rainydays-logo-green.svg"
+            alt="logo green"
+          />
           <article>
             <h3 class="heading-uppercase-l c-white">Sosiale medier</h3>
             <article class="flex-col-hor">
