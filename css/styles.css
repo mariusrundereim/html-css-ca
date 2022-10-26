@@ -52,6 +52,10 @@
   --transition-1: 300ms ease;
 }
 
+button {
+  color: var(--color-10);
+}
+
 body {
   font-family: "Heebo", sans-serif;
   display: flex;
@@ -176,6 +180,19 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--padding-xl);
+}
+
+.grid-three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-three-col-align {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  border: var(--border_normal) var(--main_grey1) solid;
 }
 
 .grid-four-col {
