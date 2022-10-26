@@ -256,40 +256,13 @@ nav > ul > li {
 .header-category-men {
   background: var(--main_green-dark);
   min-height: 10rem;
+  display: none;
 }
 
 .header-category-women {
   background: var(--main_pink-dark);
   min-height: 10rem;
-}
-
-/* Header Category */
-
-/* .header-category-men,
-#page_men {
   display: none;
-}
-
-#page_men:checked ~ .header-category-men {
-  display: block;
-}
-
-.header-category-women,
-#page_women {
-  display: none;
-}
-
-#page_women:checked ~ .header-category-women {
-  display: block;
-} */
-
-.header-category-men,
-#page_men {
-  display: none;
-}
-
-#page_men:checked ~ .header-category-men {
-  display: block;
 }
 
 /*** Footer ***/
