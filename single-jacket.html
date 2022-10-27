@@ -26,7 +26,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <section
         class="primary-header flex-col-hor spacebetween align-item page-width"
       >
@@ -193,41 +193,93 @@
 
     <main class="page-width flex-col-ver">
       <section class="grid-two-col">
-        <img
-          class="image-product-preview"
-          src="/images/products/RainyDays_Jacket2.png"
-          alt="Bergen Jacket"
-        />
-        <h2>Bergen Jacket</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-          perferendis ullam quisquam quis impedit suscipit, provident repellat?
-          Voluptatibus quod consequuntur, dolorem aliquam ipsa voluptatum
-          molestiae vitae, cumque, fugit assumenda architecto eos provident
-          praesentium sit earum et! Quae dignissimos cupiditate molestiae ad
-          unde impedit nemo sed perspiciatis quia repudiandae.
-        </p>
-        <ul>
-          <li>Suitable for a range of different weather types</li>
-          <li>Comfortable</li>
-          <li>Water-resistant</li>
-        </ul>
-        <div class="price-tag"><h3>1400,- NOK</h3></div>
-        <section class="product-colors">
-          <p>Colors:</p>
-          <input type="radio" name="product-colors" id="color-green" checked />
-          <input type="radio" name="product-colors" id="color-purple" checked />
-          <input type="radio" name="product-colors" id="color-pink" checked />
-          <input type="radio" name="product-colors" id="color-blue" checked />
-          <input type="radio" name="product-colors" id="color-black" checked />
-        </section>
-        <section class="product-size grid-three-col-align">
-          <p>X-Small</p>
-          <p>Small</p>
-          <p>Medium</p>
-          <p>Large</p>
-          <p>X-Large</p>
-          <p>XX-Large</p>
+        <div class="image-product_preview">
+          <img
+            class="product-img-item"
+            src="/images/products/RainyDays_Jacket2.png"
+            alt="Bergen Jacket"
+          />
+        </div>
+
+        <article class="product-info">
+          <header>
+            <h2 class="heading-uppercase-xl main_green-dark-color">
+              Bergen Jacket
+            </h2>
+          </header>
+          <article>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              perferendis ullam quisquam quis impedit suscipit, provident
+              repellat? Voluptatibus quod consequuntur, dolorem aliquam ipsa
+              voluptatum molestiae vitae, cumque, fugit assumenda architecto eos
+              provident praesentium sit earum et! Quae dignissimos cupiditate
+              molestiae ad unde impedit nemo sed perspiciatis quia repudiandae.
+            </p>
+            <ul>
+              <li>Suitable for a range of different weather types</li>
+              <li>Comfortable</li>
+              <li>Water-resistant</li>
+            </ul>
+            <div class="price-tag"><h3>1400,- NOK</h3></div>
+          </article>
+        </article>
+        <iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+
+        <section class="product-alternative">
+          <section class="product-colors">
+            <p>Colors:</p>
+            <input
+              type="radio"
+              name="product-colors"
+              id="color-green"
+              checked
+            />
+            <input
+              type="radio"
+              name="product-colors"
+              id="color-purple"
+              checked
+            />
+            <input type="radio" name="product-colors" id="color-pink" checked />
+            <input type="radio" name="product-colors" id="color-blue" checked />
+            <input
+              type="radio"
+              name="product-colors"
+              id="color-black"
+              checked
+            />
+          </section>
+          <section class="product-size">
+            <section class="grid-three-col-align">
+              <article class="product-size-box">
+                <p class="text-sm">X-Small</p>
+              </article>
+              <article class="product-size-box">
+                <p class="text-sm">Small</p>
+              </article>
+              <article class="product-size-box">
+                <p class="text-sm">Medium</p>
+              </article>
+              <article class="product-size-box">
+                <p class="text-sm">Large</p>
+              </article>
+              <article class="product-size-box">
+                <p class="text-sm">X-Large</p>
+              </article>
+              <article class="product-size-box">
+                <p class="text-sm">XX-Large</p>
+              </article>
+            </section>
+            <article class="flex-col-hor align-item gap-1">
+              <i class="fa-solid fa-circle main_green-color"></i>
+              <p class="text-sm">
+                We have <strong>12 available</strong> from stock
+              </p>
+            </article>
+            <button class="btn-submit">Add to cart</button>
+          </section>
         </section>
       </section>
 
