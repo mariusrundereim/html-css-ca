@@ -6,9 +6,12 @@
 
   /* Flexbox */
   .flex-col-hor {
-    flex-direction: column;
+    flex-direction: row;
   }
   /* Grid */
+  .grid-two-col-clean {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .grid-two-col {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -21,5 +24,35 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--padding-sm);
+  }
+
+  /* Single Product Page */
+
+  .col--1 {
+    order: 1;
+  }
+
+  .col--2 {
+    order: 2;
+  }
+
+  .col--3 {
+    order: 4;
+  }
+
+  .col--4 {
+    justify-items: normal;
+    order: 3;
+  }
+
+  /* Footer */
+
+  .some-icons-main {
+    justify-content: space-around;
+    gap: var(--gap_1);
+  }
+
+  .teest-1 {
+    border: red 2px dashed;
   }
 }
