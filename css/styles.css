@@ -305,10 +305,6 @@ footer {
   width: 15rem;
 }
 
-.teest-1 {
-  border: red 2px dashed;
-}
-
 .some-icons-main {
   display: flex;
   flex-direction: row;
@@ -587,6 +583,25 @@ footer {
   border-color: orange;
   border: 1px solid red;
 }
-/********************* CHECKOUT *********************/
+/********************* ADD TO CART *********************/
+
+/* .cart-section-1 {
+  border: 2px dashed red;
+} */
+
+/* .cart-sec-item {
+  border: 1px dashed blue;
+} */
+
+.img-cart {
+  width: 80px;
+}
+
+.cart-sec-3-item {
+  border: var(--main_grey1) var(--border_small) solid;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 /********************* ABOUT *********************/
 /********************* CONTACT *********************/
