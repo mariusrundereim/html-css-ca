@@ -605,8 +605,22 @@ footer {
 .cart-sec-3-item {
   border: var(--main_grey1) var(--border_small) solid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 110px 1fr 1fr 220px;
   padding: var(--padding-m);
+}
+
+.flex-gap-align {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap_2);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.payment-detail-1 {
+  color: var(--main_green-dark);
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
 }
 
 /********************* ABOUT *********************/

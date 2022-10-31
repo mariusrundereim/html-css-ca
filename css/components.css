@@ -24,3 +24,11 @@
   height: 6rem;
   border: var(--border_normal) var(--main_green-dark) solid;
 }
+
+.hr-line-small {
+  border: 1px solid var(--main_green-dark);
+}
+
+.hr-line-big {
+  border: 2px solid var(--main_green-dark);
+}
