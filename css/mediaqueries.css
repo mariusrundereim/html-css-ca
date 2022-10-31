@@ -51,4 +51,10 @@
     justify-content: space-around;
     gap: var(--gap_1);
   }
+
+  /* Add to Cart */
+
+  .cart-sec-3-item {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -293,6 +293,11 @@ nav > ul > li {
   display: none;
 }
 
+.shopping-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
 /*** Footer ***/
 
 footer {
@@ -600,7 +605,8 @@ footer {
 .cart-sec-3-item {
   border: var(--main_grey1) var(--border_small) solid;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  padding: var(--padding-m);
 }
 
 /********************* ABOUT *********************/
