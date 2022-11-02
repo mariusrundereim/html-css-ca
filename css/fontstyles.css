@@ -43,3 +43,16 @@
 .pagelinks:hover {
   color: var(--main_green);
 }
+
+.pagelinks-xl {
+  font-family: var(--font-2);
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--c-white);
+  transition: var(--transition-1);
+}
+
+.pagelinks-xl:hover {
+  color: var(--main_green);
+}

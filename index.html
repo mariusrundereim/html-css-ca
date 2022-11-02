@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainy Days</title>
+    <meta name="description" content="Frontpage of RainyDays" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/components.css" />
     <link rel="stylesheet" href="/css/fontstyles.css" />
@@ -31,22 +32,40 @@
       <!-- Primary Header -->
       <section class="primary-header">
         <div class="flex pad-1">
-          <h1>Page Name</h1>
-          <nav>
+          <a href="index.html">
+            <img
+              class="page-logo"
+              src="/images/rainydays-logo.svg"
+              alt="rainy days logo"
+            />
+          </a>
+          <nav class="primary-nav">
             <ul class="flex gap-1">
-              <li onclick="men()">Men</li>
-              <li onclick="women()">Women</li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li class="pagelinks" onclick="men()">Men</li>
+              <li class="pagelinks" onclick="women()">Women</li>
+              <li class="pagelinks"><a href="#" class="pagelinks">About</a></li>
+              <li class="pagelinks">
+                <a href="#" class="pagelinks">Contact</a>
+              </li>
             </ul>
           </nav>
-          <p>Handlekurv</p>
+          <a href="addtocart.html" class="header-shopping-bag"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
         </div>
       </section>
       <!-- Primary Header Mobile -->
       <section class="primary-header-mobile">
         <div class="flex pad-1">
-          <article><h1>Page Name</h1></article>
+          <article>
+            <a href="index.html">
+              <img
+                class="page-logo"
+                src="/images/rainydays-logo.svg"
+                alt="rainy days logo"
+              />
+            </a>
+          </article>
           <article>
             <i onclick="MobileBar()" class="fa-solid fa-bars"></i>
           </article>
@@ -54,11 +73,11 @@
       </section>
       <!-- Header Mobile Pagelinks -->
       <section class="header-mobile-pagelinks center">
-        <nav class="center gap-1">
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+        <nav class="center gap-1 text-align-c">
+          <a href="#" class="pagelinks-xl">Men</a>
+          <a href="#" class="pagelinks-xl">Women</a>
+          <a href="#" class="pagelinks-xl">About</a>
+          <a href="#" class="pagelinks-xl">Contact</a>
         </nav>
       </section>
       <!-- Men Category -->
