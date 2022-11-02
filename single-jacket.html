@@ -30,34 +30,28 @@
       <section
         class="primary-header flex-col-hor spacebetween align-item page-width"
       >
-        <img
-          class="page-logo"
-          src="/images/rainydays-logo.svg"
-          href="index.html"
-          alt="rainydays-logo"
-        />
+      <a href="index.html">      <img
+        class="page-logo"
+        src="/images/rainydays-logo.svg"
+        href="index.html"
+        alt="rainydays-logo"
+      /></a>  
+
         <nav>
           <ul>
             <li>
-              <a href="/listofjackets-men.html" class="pagelinks">Men</a>
-              <input type="checkbox" id="page_men" />
-              <label for="page_men"
-                ><i class="page_men fa-sharp fa-solid fa-chevron-down"></i
-              ></label>
-            </li>
-
+              <a href="/listofjackets-men.html" class="pagelinks"
+                >Men<i class="page_men fa-sharp fa-solid fa-chevron-down"></i
+              >
             <li>
-              <a href="#" class="pagelinks">Women </a>
-              <input type="checkbox" id="page_women" />
-              <label for="page_women">
-                <i class="page_women fa-sharp fa-solid fa-chevron-down"></i>
-              </label>
+              <a href="#" class="pagelinks">Women <i class="page_women fa-sharp fa-solid fa-chevron-down"></i></a>
             </li>
             <li><a href="#" class="pagelinks">About</a></li>
             <li><a href="#" class="pagelinks">Contact</a></li>
           </ul>
         </nav>
-        <i class="fa-solid fa-bag-shopping"></i>
+        <a href="/addtocart.html"><i class="fa-solid fa-bag-shopping shopping-icon"></i></a>
+        
       </section>
       <!-- Men Category -->
       <section class="header-category-men">
@@ -226,28 +220,15 @@
           </video>
         </article>
         <article class="col--4">
-          <section class="product-colors">
+          <section class="product-colors flex-col-ver gap-1">
             <p>Colors:</p>
-            <input
-              type="radio"
-              name="product-colors"
-              id="color-green"
-              checked
-            />
-            <input
-              type="radio"
-              name="product-colors"
-              id="color-purple"
-              checked
-            />
-            <input type="radio" name="product-colors" id="color-pink" checked />
-            <input type="radio" name="product-colors" id="color-blue" checked />
-            <input
-              type="radio"
-              name="product-colors"
-              id="color-black"
-              checked
-            />
+            <section class="flex gap-1">
+              <i class="fa-solid fa-circle circle-prop"></i>
+              <i class="fa-solid fa-circle circle-prop"></i>
+              <i class="fa-solid fa-circle circle-prop"></i>
+              <i class="fa-solid fa-circle circle-prop"></i>
+              <i class="fa-solid fa-circle circle-prop"></i>
+            </section>
           </section>
           <section class="product-size">
             <section class="grid-three-col-align">
@@ -277,7 +258,7 @@
               </p>
             </article>
           </section>
-          <button class="btn-submit">Add to cart</button>
+          <a href="/addtocart.html" class="btn-submit">Add to cart</a>
         </article>
       </section>
     </main>

@@ -50,7 +50,8 @@
             <li><a href="#" class="pagelinks">Contact</a></li>
           </ul>
         </nav>
-        <i class="fa-solid fa-bag-shopping"></i>
+        <a href="/addtocart.html"><i class="fa-solid fa-bag-shopping shopping-icon"></i></a>
+        
       </section>
       <!-- Men Category -->
       <section class="header-category-men">
@@ -184,35 +185,31 @@
       </section>
     </header>
 
-    <main class="page-width">
-
-      <section class="cart-section-1">
-        <div class="cart-sec-item">
-          <div class="grid-two-col-clean grid-center">
-            <h3>Shopping Cart</h3>
-            <h3>Payment</h3>
-          </div>
-
-          <label for="progress"></label>
-          <progress max="100%" value="50%"></progress>
-        </div>
-        <div class="cart-sec-item"></div>
+    <main class="page-width flex-page-gap">
+      <section class="cart-section-1 grid-two-col-clean">
+        <article>
+          <h3 class="text-align-c">Shopping Cart</h3>
+          <div class="progress-bar-cart"></div>
+        </article>
+        <article>
+          <h3 class="text-align-c">Payment</h3>
+          <div class="progress-bar-cart-uncheck"></div>
+        </article>
       </section>
       <section class="cart-section-2 grid-two-col">
-        <article>
-          <button class="btn-3">Continue Shopping</button>
-        </article>
-        <article>
-          <button class="btn-3">Payment</button>
-        </article>
+        <a href="index.html" class="btn-3 grid-center">Continue Shopping</a>
+        <a href="#" class="btn-3 grid-center">Payment</a>
       </section>
       <section class="cart-section-3">
         <article class="cart-sec-3-item">
           <div class="product--image cart-sec-item-box">
-            <img class="img-cart " src="/images/products/RainyDays_Jacket2.png" alt="product image">
-
+            <img
+              class="img-cart"
+              src="/images/products/RainyDays_Jacket2.png"
+              alt="product image"
+            />
           </div>
-          
+
           <article class="flex-gap-align cart-sec-item-box">
             <article>
               <h2 class="heading-uppercase-m main_green-dark-color">Bergen</h2>
@@ -224,7 +221,7 @@
               <p class="text-sm">1499,- NOK</p>
             </article>
           </article>
-          <article  class="flex-gap-align cart-sec-item-box">
+          <article class="flex-gap-align cart-sec-item-box">
             <article>
               <h2 class="heading-uppercase-m main_green-dark-color">Color</h2>
               <p class="text-sm">Black</p>
@@ -234,17 +231,17 @@
               <p class="text-sm">M</p>
             </article>
             <article>
-              <h2 class="heading-uppercase-m main_green-dark-color">Quantity</h2>
+              <h2 class="heading-uppercase-m main_green-dark-color">
+                Quantity
+              </h2>
               <p class="text-sm">1</p>
             </article>
           </article>
-
 
           <article class="cart-sec-item-box">
             <button class="btn-3">Edit Order</button>
           </article>
         </article>
-        
       </section>
 
       <section class="cart-section-4">
@@ -252,26 +249,45 @@
           <h3>Frakt</h3>
           <h4>120 NOK</h4>
         </article>
-        <hr class="hr-line-small">
+        <hr class="hr-line-small" />
         <article class="payment-detail-1 flex flex-align-space">
           <h3>Total</h3>
           <h4>1699 NOK</h4>
         </article>
-        <hr class="hr-line-big">
+        <hr class="hr-line-big" />
       </section>
 
-      <section></section>
+      <section>
+        <article>
+          <h3>Payment</h3>
+        </article>
+        <section class="grid-two-col-clean gap-2">
+          <article>
+            <a class="btn-3 flex space-around align-item" href="#"
+              ><p>Pay with</p>
+              <img src="/images/icons/Vipps-logo.svg" alt="Vipps logo"
+            /></a>
+          </article>
+          <article>
+            <a class="btn-3 flex space-around align-item" href="#">
+              <p>Pay with</p>
+              <img src="/images/icons/visa-logo.svg" alt="Visa logo"
+            /></a>
+          </article>
+        </section>
+      </section>
     </main>
 
     <footer class="grid-center">
       <section class="page-width grid-two-col">
         <section class="flex-col-ver spacebetween text-align-c">
-          <a href="index.html"><img
-            class="logo-footer"
-            src="/images/rainydays-logo-green.svg"
-            alt="logo green"
+          <a href="index.html"
+            ><img
+              class="logo-footer"
+              src="/images/rainydays-logo-green.svg"
+              alt="logo green"
           /></a>
-          
+
           <article>
             <h3 class="heading-uppercase-l c-white">Sosiale medier</h3>
             <article class="some-icons-main">
@@ -296,20 +312,29 @@
         <section class="newsletter flex-col-ver space-around">
           <h3 class="heading-uppercase-l c-white text-align-c">Newsletter</h3>
           <div class="news-wrap">
-            <form action="newsletter" class="news-form"
-            ><div class="form-name">
-              <label for="name"><p class="text-uppercase-sm c-white">Your name:</p></label>
-              <input type="text" name="name" id="name-form-label" required>
-            </div>
-          <div class="email-form">
-            <label for="email"><p class="text-uppercase-sm c-white">Your email:</p></label>
-            <input type="email" name="email" id="email-form-label" required>
-          </div><div class="submit-form">
-            <input type="submit" class="btn-submit" value="Subscribe">
-          </div></form>
+            <form action="newsletter" class="news-form">
+              <div class="form-name">
+                <label for="name"
+                  ><p class="text-uppercase-sm c-white">Your name:</p></label
+                >
+                <input type="text" name="name" id="name-form-label" required />
+              </div>
+              <div class="email-form">
+                <label for="email"
+                  ><p class="text-uppercase-sm c-white">Your email:</p></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email-form-label"
+                  required
+                />
+              </div>
+              <div class="submit-form">
+                <input type="submit" class="btn-submit" value="Subscribe" />
+              </div>
+            </form>
           </div>
-
-    
         </section>
       </section>
     </footer>

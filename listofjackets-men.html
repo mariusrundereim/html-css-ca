@@ -26,39 +26,32 @@
     />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <section
         class="primary-header flex-col-hor spacebetween align-item page-width"
       >
-        <img
-          class="page-logo"
-          src="/images/rainydays-logo.svg"
-          href="index.html"
-          alt="rainydays-logo"
-        />
+      <a href="index.html">      <img
+        class="page-logo"
+        src="/images/rainydays-logo.svg"
+        href="index.html"
+        alt="rainydays-logo"
+      /></a>  
+
         <nav>
           <ul>
             <li>
-              <input type="checkbox" id="page_men" />
-              <label for="page_men">
-                <a class="pagelinks"
-                  >Men<i class="fa-sharp fa-solid fa-chevron-down"></i
-                ></a>
-              </label>
-
-              <input type="checkbox" id="page_women" />
-              <label for="page_women">
-                <a class="pagelinks"
-                  >Women<i class="fa-sharp fa-solid fa-chevron-down"></i
-                ></a>
-              </label>
-
-              <a class="pagelinks">About</a>
-              <a class="pagelinks">Contact</a>
+              <a href="/listofjackets-men.html" class="pagelinks"
+                >Men<i class="page_men fa-sharp fa-solid fa-chevron-down"></i
+              >
+            <li>
+              <a href="#" class="pagelinks">Women <i class="page_women fa-sharp fa-solid fa-chevron-down"></i></a>
             </li>
+            <li><a href="#" class="pagelinks">About</a></li>
+            <li><a href="#" class="pagelinks">Contact</a></li>
           </ul>
         </nav>
-        <i class="fa-solid fa-bag-shopping"></i>
+        <a href="/addtocart.html"><i class="fa-solid fa-bag-shopping shopping-icon"></i></a>
+        
       </section>
       <!-- Men Category -->
       <section class="header-category-men">
