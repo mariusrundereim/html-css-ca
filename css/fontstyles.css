@@ -56,3 +56,10 @@
 .pagelinks-xl:hover {
   color: var(--main_green);
 }
+
+.small-heading {
+  color: var(--c-white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}

@@ -1,6 +1,12 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   :root {
     --page-width: calc(100% - 5rem);
+  }
+
+  /* Header */
+
+  .category-men-grid {
+    width: calc(100% - 3rem);
   }
 
   /* Flexbox */
@@ -16,7 +22,7 @@
   }
 
   .grid-four-col {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .grid-five-col {
@@ -69,12 +75,16 @@
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1200px) {
   .primary-header {
     display: none;
   }
 
   .primary-header-mobile {
     display: block;
+  }
+
+  .grid-four-col {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

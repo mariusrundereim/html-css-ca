@@ -27,6 +27,16 @@
   text-decoration: none;
 }
 
+.btn-result {
+  color: var(--main_green-dark);
+  background: var(--main_green);
+  width: max-content;
+  height: max-content;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .hr-line-small {
   border: 1px solid var(--main_green-dark);
 }
