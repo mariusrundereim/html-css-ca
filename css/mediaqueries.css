@@ -31,6 +31,10 @@
     gap: var(--padding-sm);
   }
 
+  .listofjackets-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Single Product Page */
 
   .col--1 {

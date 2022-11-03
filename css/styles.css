@@ -64,6 +64,12 @@ body {
   gap: var(--gap_3);
 }
 
+.page-width {
+  width: var(--page-width);
+  margin: 0 auto;
+  border: 1px dashed tomato;
+}
+
 /********************* HOMEPAGE *********************/
 
 .image-prop {
@@ -155,47 +161,80 @@ body {
 
 /********************* LIST OF JACKETS *********************/
 
-.product-item {
-  text-decoration: none;
-}
-
-.product-image {
-  max-width: calc(100% - 15rem);
-  min-width: 10rem;
-  padding: 1rem;
-  scale: 1;
-  transition: 300ms ease;
-  transform-origin: center;
-}
-
-.product-image:hover {
-  scale: 1.1;
-}
-
-.item-border {
-  border: var(--border_small) var(--main_grey2) solid;
-}
-
-.product-specs {
-  background: var(--main_green);
+.listofjackets-page-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  padding: var(--padding-sm);
-  position: relative;
-  height: 40px;
+  gap: var(--gap_2);
+  border: 2px solid red;
+}
+
+.card--1 {
+  background: white;
+  width: 100%;
+  height: 500px;
+  min-height: 300px;
+  outline: 2px solid var(--main_grey1);
+  transition: 30ms ease;
+}
+
+.card-hover-shadow:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content--grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  transition: all ease-in-out 0.25s;
   overflow: hidden;
 }
 
-.boox-box {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  bottom: 0px;
-  transition: 800ms ease;
+.sticky-label {
+  position: relative;
+  display: inline-block;
+  width: 50%;
 }
 
-.box-shape {
-  background-color: greenyellow;
-  margin-top: 30px;
+.sticky-label-content {
+  position: absolute;
+  color: white;
+  background: purple;
+  padding: 0.5rem 1rem;
+  margin-top: -15px;
+}
+
+.sec-4-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 200%;
+  height: 100%;
+  transform: translateX(0px);
+  transition: 300ms ease-out;
+}
+
+.sec-4-card-grid:hover {
+  transform: translateX(-300px);
+}
+
+.card--addcart {
+  background: var(--main_green);
+}
+
+.product-card-content_5 {
+  background: yellowgreen;
+}
+
+.img-jacket-1 {
+  background-image: url(/images/products/RainyDays_Jacket2.png);
+}
+
+.img-product-prop {
+  width: calc(100% - 2rem);
+  height: 22rem;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /********************* SINGLE PRODUCT *********************/
@@ -219,10 +258,6 @@ body {
 
   display: grid;
   justify-items: start;
-}
-
-.video-product {
-  border: 10px solid red;
 }
 
 .product-img-item {
@@ -376,3 +411,46 @@ body {
 
 /********************* ABOUT *********************/
 /********************* CONTACT *********************/
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap_2);
+}
+
+.contact-staff-grid {
+  display: grid;
+  grid-template-rows: 320px 1fr 1fr;
+  border: 2px solid red;
+}
+
+.staff-row-frame:nth-child(2) {
+  background: lightgreen;
+}
+
+.staff-row-frame:nth-child(3) {
+  background: lightskyblue;
+}
+
+.staff-1 {
+  background-image: url(/images/staff/staff-1-sm.jpg);
+}
+
+.staff-2 {
+  background-image: url(/images/staff/staff-2-sm.jpg);
+}
+
+.staff-3 {
+  background-image: url(/images/staff/staff-3-sm.jpg);
+}
+
+.staff-4 {
+  background-image: url(/images/staff/staff-4-sm.jpg);
+}
+
+/********************* PURCHASED FINISH *********************/
+
+.fa-circle-check {
+  font-size: 5rem;
+  color: var(--main_green-dark);
+}
