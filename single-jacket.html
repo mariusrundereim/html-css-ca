@@ -245,32 +245,20 @@
             </section>
           </section>
           <section class="product-size">
-            <section class="grid-three-col-align">
-              <article class="product-size-box">
-                <p class="text-sm">X-Small</p>
-              </article>
-              <article class="product-size-box">
-                <p class="text-sm">Small</p>
-              </article>
-              <article class="product-size-box">
-                <p class="text-sm">Medium</p>
-              </article>
-              <article class="product-size-box">
-                <p class="text-sm">Large</p>
-              </article>
-              <article class="product-size-box">
-                <p class="text-sm">X-Large</p>
-              </article>
-              <article class="product-size-box">
-                <p class="text-sm">XX-Large</p>
-              </article>
+            <!--New Label for Choosing Sizes-->
+            <section>
+              <label for="product-sizes">Choose your Size:</label>
+              <input list="product--types" name="product-size" />
+
+              <datalist id="product--types">
+                <option value="X-Small">12 pcs. Available</option>
+                <option value="Small">33 pcs. Available</option>
+                <option value="Medium">36 pcs. Available</option>
+                <option value="Large">76 pcs. Available</option>
+                <option value="X-Large">16 pcs. Available</option>
+                <option value="XX-Large">36 pcs. Available</option>
+              </datalist>
             </section>
-            <article class="flex-col-hor align-item gap-1">
-              <i class="fa-solid fa-circle main_green-color"></i>
-              <p class="text-sm">
-                We have <strong>12 available</strong> from stock
-              </p>
-            </article>
           </section>
           <a href="/addtocart.html" class="btn-submit">Add to cart</a>
         </article>

@@ -13,6 +13,14 @@
   padding: var(--padding-m);
   border: var(--border_normal) var(--main_green) solid;
   text-decoration: none;
+  height: min-content;
+  transition: var(--transition-1);
+}
+
+.btn-submit:hover {
+  color: var(--c-white);
+  background: var(--main_green-dark);
+  border: var(--border_normal) var(--main_green-dark) solid;
 }
 
 .btn-3 {
