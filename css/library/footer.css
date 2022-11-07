@@ -12,6 +12,13 @@ footer {
   grid-template-rows: auto;
 }
 
+.flex--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
 .logo-footer {
   min-width: 1rem;
   width: min-content;

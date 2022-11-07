@@ -385,6 +385,50 @@ body {
 }
 
 /********************* ABOUT *********************/
+
+.openpositions-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem;
+}
+
+.openpositions-grid:hover {
+  background: rgba(146, 229, 150, 0.3);
+}
+
+.ourstores-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem;
+}
+
+.ourstores-grid:hover {
+  background: rgba(146, 229, 150, 0.3);
+}
+
+details {
+  border: 3px solid var(--main_green-dark);
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--main_green);
+  margin-bottom: 0.5em;
+}
+
 /********************* CONTACT *********************/
 
 .contact-grid {

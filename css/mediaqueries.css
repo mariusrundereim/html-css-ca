@@ -11,6 +11,10 @@
     display: block;
   }
 
+  .grid-two-col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .grid-four-col {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -21,6 +25,12 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  /* About */
+
+  .openpositions-grid {
+    grid-template-columns: auto;
+    grid-template-rows: 2fr repeat(4, 1fr);
+  }
   /* Contact Page */
 
   .contact-grid {
