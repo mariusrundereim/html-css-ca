@@ -21,7 +21,7 @@ footer {
 
 .logo-footer {
   min-width: 1rem;
-  width: min-content;
+  max-width: 10rem;
 }
 
 .some-icons-main {
@@ -51,7 +51,7 @@ footer {
 
 .news-wrap {
   width: 100%;
-  height: calc(100% - 8rem);
+  min-height: calc(100% - 8rem);
 }
 
 .news-form {
@@ -64,7 +64,13 @@ footer {
 }
 
 .form-name {
-  width: 100%;
+  min-width: 20%;
+  max-width: 100%;
+}
+
+.email-form {
+  min-width: 20%;
+  max-width: 100%;
 }
 
 #name-form-label {

@@ -67,7 +67,7 @@ body {
 .page-width {
   width: var(--page-width);
   margin: 0 auto;
-  border: 1px dashed tomato;
+  /* border: 1px dashed tomato; */
 }
 
 /********************* HOMEPAGE *********************/
@@ -100,36 +100,36 @@ body {
   width: 100%;
   height: 20rem;
   display: flex;
-  animation: slide 20s infinite;
+  animation: slide 10s infinite;
+  border: red 1px solid;
 }
 
-/*
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(0);
-    }
-    30% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    55% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-200%);
-    }
-    80% {
-        transform: translateX(-300px);
-    }
-    100% {
-        transform: translateX(-300%);
-    }
-}*/
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+} */
 
 .slider-container > .slider-img > img {
   width: 100%;
@@ -155,6 +155,9 @@ body {
 .brand-logo {
   scale: 1;
   transition: 300ms ease;
+
+  min-width: 4rem;
+  max-width: 10rem;
 }
 
 .brand-logo:hover {
@@ -247,6 +250,31 @@ body {
 
 .col--1 {
   margin: 0 auto;
+}
+
+.jacket--preview-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border: 2px solid var(--main_grey1);
+}
+
+.jacket--preview-item:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  outline: 2px solid var(--main_grey1);
+}
+
+.j-item-trans {
+  opacity: 50%;
+  transition: var(--transition-1);
+}
+
+.j-item-trans:hover {
+  opacity: 100%;
 }
 
 .col--2 {
@@ -440,7 +468,6 @@ details[open] summary {
 .contact-staff-grid {
   display: grid;
   grid-template-rows: 320px 1fr 1fr;
-  border: 2px solid red;
 }
 
 .c-img-prop {

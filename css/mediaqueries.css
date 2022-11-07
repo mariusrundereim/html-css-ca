@@ -3,6 +3,11 @@
   body {
     background: palevioletred;
   }
+
+  :root {
+    --page-width: calc(100% - 2rem);
+  }
+
   .primary-header {
     display: none;
   }
@@ -23,6 +28,18 @@
   .ourbrands--grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* Single Jacket Page */
+
+  .jacket--preview-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .jacket--preview-item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   /* About */
@@ -51,13 +68,16 @@
 }
 
 /* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
 @media screen and (max-width: 360px) {
   body {
     background: goldenrod;
-  }
-
-  :root {
-    --page-width: calc(100% - 5rem);
   }
 
   /* Header */
@@ -123,6 +143,15 @@
   .some-icons-main {
     justify-content: space-around;
     gap: var(--gap_1);
+  }
+
+  .social-box {
+    padding: var(--padding-sm);
+    font-size: 1rem;
+  }
+
+  .news-form {
+    width: calc(100% - 2rem);
   }
 
   /* Add to Cart */
