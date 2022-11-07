@@ -6,8 +6,15 @@ footer {
   width: 100%;
 }
 
+.footer-responsive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
 .logo-footer {
-  width: 15rem;
+  min-width: 1rem;
+  width: min-content;
 }
 
 .some-icons-main {

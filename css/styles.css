@@ -142,6 +142,12 @@ body {
   transition: 300ms ease;
 }
 
+.ourbrands--grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
 .ourbrands:hover {
   background-color: var(--main_grey1);
 }
@@ -225,7 +231,7 @@ body {
 }
 
 .img-jacket-1 {
-  background-image: url(/images/products/RainyDays_Jacket2.png);
+  background-image: url(/images/products/RainyDays_Jacket-2-sm.png);
 }
 
 .img-product-prop {
@@ -393,12 +399,14 @@ body {
   border: 2px solid red;
 }
 
-.staff-row-frame:nth-child(2) {
-  background: lightgreen;
+.c-img-prop {
+  background-position: center;
+  background-size: cover;
 }
 
-.staff-row-frame:nth-child(3) {
-  background: lightskyblue;
+.c_staff_info {
+  min-height: 5rem;
+  margin-top: 1rem;
 }
 
 .staff-1 {
