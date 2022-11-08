@@ -30,6 +30,12 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  /* List of Jackets */
+
+  .listofjackets-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Single Jacket Page */
 
   .jacket--preview-grid {
@@ -121,6 +127,12 @@
 
   .listofjackets-page-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* List of Jackets */
+
+  .listofjackets-page-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /* Single Product Page */

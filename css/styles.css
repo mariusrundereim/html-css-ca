@@ -85,18 +85,18 @@ body {
 }
 
 .women-image {
-  background-image: url(/images/products/product-promo-women.jpg);75, 94, 111, 0.5
+  background-image: url(/images/products/product-promo-women.jpg);
 }
 
 /* Hero Images */
 
 .hero--text {
-  width: 70%;
+  width: 50%;
 }
 
 .hero-img-prop {
   width: 100%;
-  min-height: 15rem;
+  min-height: 10rem;
   /**/
   background-position: center;
   background-repeat: no-repeat;
@@ -104,15 +104,27 @@ body {
 }
 
 .hero-img-1 {
-  background-image: linear-gradient(rgba(75, 94, 111, 0.7), rgba(75, 94, 111, 0.7)), url(/images/hero-img-1-sm.png);
+  background-image: linear-gradient(
+      rgba(75, 94, 111, 0.7),
+      rgba(75, 94, 111, 0.7)
+    ),
+    url(/images/hero-img-1-sm.png);
 }
 
 .hero-img-2 {
-  background-image: linear-gradient(rgba(75, 94, 111, 0.7), rgba(75, 94, 111, 0.7)), url(/images/hero-img-2-sm.png);
+  background-image: linear-gradient(
+      rgba(75, 94, 111, 0.7),
+      rgba(75, 94, 111, 0.7)
+    ),
+    url(/images/hero-img-2-sm.png);
 }
 
 .hero-img-3 {
-  background-image: linear-gradient(rgba(75, 94, 111, 0.7), rgba(75, 94, 111, 0.7)), url(/images/hero-img-3-sm.png);
+  background-image: linear-gradient(
+      rgba(75, 94, 111, 0.7),
+      rgba(75, 94, 111, 0.7)
+    ),
+    url(/images/hero-img-3-sm.png);
 }
 
 .ourbrands {
@@ -154,15 +166,21 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
+
   gap: var(--gap_2);
   border: 2px solid red;
+}
+
+.product-card-content_2,
+.product-card-content_3,
+.product-card-content_4 {
+  min-height: 2rem;
 }
 
 .card--1 {
   background: white;
   width: 100%;
-  height: 500px;
-  min-height: 300px;
+
   outline: 2px solid var(--main_grey1);
   transition: 30ms ease;
 }
@@ -173,7 +191,7 @@ body {
 
 .content--grid {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 80px 30px 30px 30px;
   transition: all ease-in-out 0.25s;
   overflow: hidden;
 }
@@ -186,9 +204,9 @@ body {
 
 .sticky-label-content {
   position: absolute;
-  color: white;
-  background: purple;
-  padding: 0.5rem 1rem;
+  color: var(--c-dark);
+  background: var(--main_green);
+  padding: 0.2rem 0.5rem;
   margin-top: -15px;
 }
 
@@ -202,11 +220,18 @@ body {
 }
 
 .sec-4-card-grid:hover {
-  transform: translateX(-300px);
+  transform: translateX(-50%);
 }
 
 .card--addcart {
   background: var(--main_green);
+}
+
+.card--addcart a {
+  color: var(--c-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .product-card-content_5 {
@@ -219,11 +244,19 @@ body {
 
 .img-product-prop {
   width: calc(100% - 2rem);
-  height: 22rem;
+  height: 26rem;
   margin: 0 auto;
+  scale: 0.8;
+  /**/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  /**/
+  transition: var(--transition-1);
+}
+
+.img-product-prop:hover {
+  scale: 0.9;
 }
 
 /********************* SINGLE PRODUCT *********************/
