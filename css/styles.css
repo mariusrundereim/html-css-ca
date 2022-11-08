@@ -298,7 +298,7 @@ body {
 
 .col--3 {
   display: grid;
-  align-items: stretch;
+  align-items: start;
 }
 
 .col--4 {

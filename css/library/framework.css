@@ -179,6 +179,12 @@
   gap: var(--padding-sm);
 }
 
+.grid-skew {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+}
+
 /* ALIGNMENT */
 
 .grid-center {
@@ -195,6 +201,11 @@
 .margin-2 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.margin-3 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .margin_down-1 {

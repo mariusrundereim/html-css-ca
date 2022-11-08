@@ -31,8 +31,13 @@
   background-color: var(--c-white);
   width: 100%;
   height: 5rem;
-  border: var(--border_normal) var(--main_green-dark) solid;
+  border: var(--border_normal) var(--main_grey2) solid;
   text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.btn-3:hover {
+  border: var(--border_normal) var(--main_grey1) solid;
 }
 
 .btn-result {

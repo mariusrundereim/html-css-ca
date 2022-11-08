@@ -9,6 +9,7 @@
       name="description"
       content="Page of Add to Cart with Payment methods"
     />
+    <link rel="icon" type="image/x-icon" href="/images/fav--icon.svg" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/components.css" />
     <link rel="stylesheet" href="/css/fontstyles.css" />
@@ -205,100 +206,111 @@
       </section>
     </header>
 
-    <main class="page-width flex-page-gap">
-      <section class="cart-section-1 grid-two-col-clean">
-        <article>
-          <h3 class="text-align-c">Shopping Cart</h3>
-          <div class="progress-bar-cart"></div>
-        </article>
-        <article>
-          <h3 class="text-align-c">Payment</h3>
-          <div class="progress-bar-cart-uncheck"></div>
-        </article>
-      </section>
-      <section class="cart-section-2 grid-two-col">
-        <a href="index.html" class="btn-3 grid-center">Continue Shopping</a>
-        <a href="#" class="btn-3 grid-center">Payment</a>
-      </section>
-      <section class="cart-section-3">
-        <article class="cart-sec-3-item">
-          <div class="product--image cart-sec-item-box">
-            <img
-              class="img-cart"
-              src="/images/products/RainyDays_Jacket2.png"
-              alt="product image"
-            />
-          </div>
-
-          <article class="flex-gap-align cart-sec-item-box">
-            <article>
-              <h2 class="heading-uppercase-m main_green-dark-color">Bergen</h2>
-              <p class="text-sm">Ski Cross Jacket</p>
-            </article>
-
-            <article>
-              <h2 class="heading-uppercase-m main_green-dark-color">Price</h2>
-              <p class="text-sm">1499,- NOK</p>
-            </article>
-          </article>
-          <article class="flex-gap-align cart-sec-item-box">
-            <article>
-              <h2 class="heading-uppercase-m main_green-dark-color">Color</h2>
-              <p class="text-sm">Black</p>
-            </article>
-            <article>
-              <h2 class="heading-uppercase-m main_green-dark-color">Size</h2>
-              <p class="text-sm">M</p>
-            </article>
-            <article>
-              <h2 class="heading-uppercase-m main_green-dark-color">
-                Quantity
-              </h2>
-              <p class="text-sm">1</p>
-            </article>
-          </article>
-
-          <article class="cart-sec-item-box">
-            <button class="btn-3">Edit Order</button>
-          </article>
-        </article>
-      </section>
-
-      <section class="cart-section-4">
-        <article class="payment-detail-1 flex flex-align-space">
-          <h3>Frakt</h3>
-          <h4>120 NOK</h4>
-        </article>
-        <hr class="hr-line-small" />
-        <article class="payment-detail-1 flex flex-align-space">
-          <h3>Total</h3>
-          <h4>1699 NOK</h4>
-        </article>
-        <hr class="hr-line-big" />
-      </section>
-
+    <main class="page-width margin-3">
+      <!-- Process Bar-->
       <section>
-        <article>
-          <h3>Payment</h3>
-        </article>
-        <section class="grid-two-col-clean gap-2">
+        <section class="grid-two-col-clean">
           <article>
-            <a
-              class="btn-3 flex space-around align-item"
-              href="purchased-finish.html"
-              ><p>Pay with</p>
-              <img src="/images/icons/Vipps-logo.svg" alt="Vipps logo"
-            /></a>
+            <h3 class="text-align-c">Shopping Cart</h3>
+            <div class="progress-bar-cart"></div>
           </article>
           <article>
-            <a
-              class="btn-3 flex space-around align-item"
-              href="purchased-finish.html"
-            >
-              <p>Pay with</p>
-              <img src="/images/icons/visa-logo.svg" alt="Visa logo"
-            /></a>
+            <h3 class="text-align-c">Payment</h3>
+            <div class="progress-bar-cart-uncheck"></div>
           </article>
+        </section>
+        <section class="grid-two-col">
+          <a href="index.html" class="btn-3 grid-center">Continue Shopping</a>
+          <a href="#" class="btn-3 grid-center">Payment</a>
+        </section>
+      </section>
+      <!-- Grid Skew -->
+      <section class="grid-skew gap-2">
+        <!-- Cart Item-->
+        <section class="cart-section-3">
+          <article class="cart-sec-3-item">
+            <div class="product--image cart-sec-item-box">
+              <img
+                class="img-cart"
+                src="/images/products/RainyDays_Jacket-2-sm.png"
+                alt="product image"
+              />
+            </div>
+
+            <article class="flex-gap-align cart-sec-item-box">
+              <article>
+                <h2 class="heading-uppercase-m main_green-dark-color">
+                  Bergen
+                </h2>
+                <p class="text-sm">Ski Cross Jacket</p>
+              </article>
+
+              <article>
+                <h2 class="heading-uppercase-m main_green-dark-color">Price</h2>
+                <p class="text-sm">1499,- NOK</p>
+              </article>
+            </article>
+            <article class="flex-gap-align cart-sec-item-box">
+              <article>
+                <h2 class="heading-uppercase-m main_green-dark-color">Color</h2>
+                <p class="text-sm">Black</p>
+              </article>
+              <article>
+                <h2 class="heading-uppercase-m main_green-dark-color">Size</h2>
+                <p class="text-sm">M</p>
+              </article>
+              <article>
+                <h2 class="heading-uppercase-m main_green-dark-color">
+                  Quantity
+                </h2>
+                <p class="text-sm">1</p>
+              </article>
+            </article>
+
+            <article class="cart-sec-item-box">
+              <button class="btn-3">Edit Order</button>
+            </article>
+          </article>
+        </section>
+
+        <!-- Shipping Details -->
+        <section class="cart-section-4">
+          <article class="payment-detail-1 flex flex-align-space">
+            <h3>Frakt</h3>
+            <h4>120 NOK</h4>
+          </article>
+          <hr class="hr-line-small" />
+          <article class="payment-detail-1 flex flex-align-space">
+            <h3>Total</h3>
+            <h4>1699 NOK</h4>
+          </article>
+          <hr class="hr-line-big" />
+        </section>
+
+        <!-- Payment Methods -->
+        <section class="cart-section-5">
+          <article>
+            <h3>Payment</h3>
+          </article>
+          <section class="grid-two-col-clean gap-2">
+            <article>
+              <a
+                class="btn-3 flex space-between align-item"
+                href="purchased-finish.html"
+                ><p>Pay with</p>
+                <img src="/images/icons/Vipps-logo.svg" alt="Vipps logo"
+              /></a>
+            </article>
+            <article>
+              <a
+                class="btn-3 flex space-between align-item"
+                href="purchased-finish.html"
+              >
+                <p>Pay with</p>
+                <img src="/images/icons/visa-logo.svg" alt="Visa logo"
+              /></a>
+            </article>
+          </section>
         </section>
       </section>
     </main>
