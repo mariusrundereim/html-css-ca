@@ -86,6 +86,10 @@
     width: calc(100% - 3rem);
   }
 
+  .hero-img-prop {
+    min-height: 6rem;
+  }
+
   /* Homepage */
 
   .ourbrands--grid {
