@@ -56,6 +56,8 @@
     grid-column-end: 4;
   }
 
+  /* Add to Cart */
+
   /* About */
 
   .openpositions-grid {
@@ -179,11 +181,6 @@
   }
 
   /* Add to Cart */
-
-  .cart-sec-3-item {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
 
   .cart-sec-item-box:nth-child(3) {
     grid-column: 1 / 3;

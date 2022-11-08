@@ -26,7 +26,8 @@
   --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
   --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
   --heading-m: clamp(1.1rem, 2.5vw, 1.4rem); /* Heading 3*/
-  --text-sm: clamp(0.7rem, 2.5vw, 1.1rem); /* Paragraphs */
+  --heading-s: clamp(1.1rem, 2.5vw, 1.2rem); /* Heading 3*/
+  --text-sm: clamp(0.7rem, 2.5vw, 1rem); /* Paragraphs */
   --p-links: 1.25rem;
 
   /* Padding */
@@ -397,13 +398,29 @@ body {
   width: 100%;
   margin-top: 1rem;
 }
-
+/* 
 .cart-sec-3-item {
-  border: var(--main_grey1) var(--border_small) solid;
+  border: var(--main_grey2) var(--border_small) solid;
   display: grid;
   grid-template-columns: 110px 1fr 1fr 220px;
-  padding: var(--padding-m);
+  grid-template-rows: auto;
+  padding: var(--padding-sm);
   align-items: center;
+  transition: var(--transition-1);
+}
+
+.cart-sec-3-item:hover {
+  border: var(--main_green-dark) var(--border_small) solid;
+} */
+
+.addtocart-box {
+  border: var(--main_grey2) var(--border_small) solid;
+  background: white;
+  transition: var(--transition-1);
+}
+
+.addtocart-box:hover {
+  border: var(--main_green-dark) var(--border_small) solid;
 }
 
 .flex-gap-align {

@@ -21,6 +21,12 @@
   font-family: "Akshar", sans-serif;
 }
 
+.heading-uppercase-s {
+  font-size: var(--heading-s, 40px);
+  text-transform: uppercase;
+  font-family: "Akshar", sans-serif;
+}
+
 .text-sm {
   font-size: var(--text-sm, 20px);
   font-weight: 300;

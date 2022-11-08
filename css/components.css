@@ -30,7 +30,7 @@
   color: var(--main_green-dark);
   background-color: var(--c-white);
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   border: var(--border_normal) var(--main_grey2) solid;
   text-decoration: none;
   transition: var(--transition-1);
@@ -48,6 +48,21 @@
   padding: 1rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.btn-small {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  font-family: var(--font-1);
+  color: var(--main_green-dark);
+  background-color: var(--c-white);
+  border: var(--border_normal) var(--main_grey2) solid;
+  transition: var(--transition-1);
+}
+
+.btn-small:hover {
+  background: var(--main_green);
+  border: var(--border_normal) var(--main_green) solid;
 }
 
 .hr-line-small {
