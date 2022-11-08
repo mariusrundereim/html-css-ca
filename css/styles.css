@@ -114,16 +114,16 @@ body {
 
 .hero-img-2 {
   background-image: linear-gradient(
-      rgba(75, 94, 111, 0.7),
-      rgba(75, 94, 111, 0.7)
+      rgba(75, 94, 111, 0.5),
+      rgba(75, 94, 111, 0.5)
     ),
     url(/images/hero-img-2-sm.png);
 }
 
 .hero-img-3 {
   background-image: linear-gradient(
-      rgba(75, 94, 111, 0.7),
-      rgba(75, 94, 111, 0.7)
+      rgba(75, 94, 111, 0.5),
+      rgba(75, 94, 111, 0.5)
     ),
     url(/images/hero-img-3-sm.png);
 }
