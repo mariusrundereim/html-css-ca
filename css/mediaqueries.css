@@ -30,6 +30,14 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .men-image {
+    background-image: url(/images/products/product-promo-men-ipad.png);
+  }
+
+  .women-image {
+    background-image: url(/images/products/product-women-ipad.png);
+  }
+
   /* List of Jackets */
 
   .listofjackets-page-grid {

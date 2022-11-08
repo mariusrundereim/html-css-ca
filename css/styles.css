@@ -81,11 +81,11 @@ body {
 }
 
 .men-image {
-  background-image: url(/images/products/product-promo-men.jpg);
+  background-image: url(/images/products/product-promo-men-sm.png);
 }
 
 .women-image {
-  background-image: url(/images/products/product-promo-women.jpg);
+  background-image: url(/images/products/product-promo-women.png);
 }
 
 /* Hero Images */
@@ -142,7 +142,7 @@ body {
 }
 
 .ourbrands:hover {
-  background-color: var(--main_grey1);
+  background-color: var(--main_green);
 }
 
 .brand-logo {
@@ -381,14 +381,6 @@ body {
 
 /********************* ADD TO CART *********************/
 
-/* .cart-section-1 {
-  border: 2px dashed red;
-} */
-
-.cart-sec-item {
-  border: 1px dashed blue;
-}
-
 .img-cart {
   width: 80px;
 }
@@ -400,6 +392,7 @@ body {
 }
 
 .progress-bar-cart-uncheck {
+  color: var(--main_grey1);
   border: 2px var(--main_grey1) solid;
   width: 100%;
   margin-top: 1rem;
