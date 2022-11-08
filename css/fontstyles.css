@@ -26,6 +26,11 @@
   font-weight: 300;
 }
 
+.text-price {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .text-uppercase-sm {
   font-size: var(--text-sm, 20px);
   text-transform: uppercase;

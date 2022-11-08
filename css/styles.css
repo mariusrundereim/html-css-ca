@@ -92,11 +92,12 @@ body {
 
 .hero--text {
   width: 50%;
+  filter: drop-shadow(0px 5px 15px);
 }
 
 .hero-img-prop {
   width: 100%;
-  min-height: 10rem;
+  min-height: 25rem;
   /**/
   background-position: center;
   background-repeat: no-repeat;
@@ -105,8 +106,8 @@ body {
 
 .hero-img-1 {
   background-image: linear-gradient(
-      rgba(75, 94, 111, 0.7),
-      rgba(75, 94, 111, 0.7)
+      rgba(75, 94, 111, 0.5),
+      rgba(75, 94, 111, 0.5)
     ),
     url(/images/hero-img-1-sm.png);
 }
@@ -162,38 +163,21 @@ body {
 
 /********************* LIST OF JACKETS *********************/
 
+.aside-icons {
+  color: var(--main_green-dark);
+  font-size: 1.4rem;
+  transition: var(--transition-1);
+}
+
+.aside-icons:hover {
+  color: var(--main_green);
+}
+
 .listofjackets-page-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-
   gap: var(--gap_2);
-  border: 2px solid red;
-}
-
-.product-card-content_2,
-.product-card-content_3,
-.product-card-content_4 {
-  min-height: 2rem;
-}
-
-.card--1 {
-  background: white;
-  width: 100%;
-
-  outline: 2px solid var(--main_grey1);
-  transition: 30ms ease;
-}
-
-.card-hover-shadow:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.content--grid {
-  display: grid;
-  grid-template-rows: 80px 30px 30px 30px;
-  transition: all ease-in-out 0.25s;
-  overflow: hidden;
 }
 
 .sticky-label {
@@ -210,53 +194,70 @@ body {
   margin-top: -15px;
 }
 
-.sec-4-card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 200%;
-  height: 100%;
-  transform: translateX(0px);
-  transition: 300ms ease-out;
+.page--card {
+  background: rgb(255, 255, 255);
+  border: var(--border_normal) var(--main_grey2) solid;
+  min-height: 30rem;
+  /**/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-1);
 }
 
-.sec-4-card-grid:hover {
+.page--card:hover {
+  border: var(--border_normal) var(--main_green-dark) solid;
+}
+
+.p-card--item-1 {
+  height: 18rem;
+}
+
+.pc--content {
+  flex-grow: 1;
+}
+
+.card--grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.teest-2 {
+  width: 200%;
+  transition: 400ms ease;
+}
+
+.teest-2:hover {
   transform: translateX(-50%);
 }
 
-.card--addcart {
+.overflow {
+  overflow: hidden;
+}
+
+.card--grid-item:nth-child(2) {
   background: var(--main_green);
-}
-
-.card--addcart a {
-  color: var(--c-dark);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.product-card-content_5 {
-  background: yellowgreen;
 }
 
 .img-jacket-1 {
   background-image: url(/images/products/RainyDays_Jacket-2-sm.png);
-}
-
-.img-product-prop {
-  width: calc(100% - 2rem);
-  height: 26rem;
-  margin: 0 auto;
-  scale: 0.8;
-  /**/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /**/
+  width: 160px;
+  height: 200px;
+  scale: 1.2;
   transition: var(--transition-1);
 }
 
-.img-product-prop:hover {
-  scale: 0.9;
+.img-jacket-1:hover {
+  scale: 1.4;
+}
+
+.text-addtocart {
+  text-decoration: none;
+  color: var(--main_green-dark);
+  text-transform: uppercase;
 }
 
 /********************* SINGLE PRODUCT *********************/
