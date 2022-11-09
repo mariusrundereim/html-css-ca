@@ -25,6 +25,10 @@
   justify-content: center;
 }
 
+.primary-nav {
+  cursor: pointer;
+}
+
 /* Primary Header */
 
 .primary-header {

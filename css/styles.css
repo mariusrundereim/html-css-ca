@@ -23,6 +23,7 @@
   --font-1: "Akshar", sans-serif;
   --font-2: "Heebo", sans-serif;
 
+  --heading-xxl: clamp(2rem, 2.5vw, 16rem); /* Heading 1*/
   --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
   --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
   --heading-m: clamp(1.1rem, 2.5vw, 1.4rem); /* Heading 3*/
@@ -79,6 +80,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .men-image {

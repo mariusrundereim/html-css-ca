@@ -9,6 +9,10 @@
   font-family: "Akshar", sans-serif;
 }
 
+.page-heading-xxl {
+  font-size: var(--heading-xxl);
+}
+
 .heading-uppercase-l {
   font-size: var(--heading-l, 40px);
   text-transform: uppercase;

@@ -27,6 +27,7 @@ footer {
 .some-icons-main {
   display: flex;
   flex-direction: row;
+
   gap: var(--gap_1);
 }
 
@@ -77,6 +78,7 @@ footer {
   width: 100%;
   padding: 0.7rem;
   border: none;
+  color: white;
   background-color: rgba(0, 0, 0, 0.1);
   transition: 300ms ease-in;
 }
@@ -89,6 +91,7 @@ footer {
   width: 100%;
   padding: 0.7rem;
   border: none;
+  color: white;
   background-color: rgba(0, 0, 0, 0.1);
   transition: 300ms ease-in;
 }
