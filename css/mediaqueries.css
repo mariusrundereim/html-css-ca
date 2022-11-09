@@ -1,9 +1,5 @@
 /* MEDIUM DEVICES */
 @media screen and (max-width: 1200px) {
-  body {
-    background: palevioletred;
-  }
-
   :root {
     --page-width: calc(100% - 2rem);
   }
@@ -92,10 +88,6 @@
 /* SMALLER DEVICES */
 /* SMALLER DEVICES */
 @media screen and (max-width: 360px) {
-  body {
-    background: goldenrod;
-  }
-
   /* Header */
 
   .category-men-grid {
