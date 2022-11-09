@@ -23,7 +23,7 @@
   --font-1: "Akshar", sans-serif;
   --font-2: "Heebo", sans-serif;
 
-  --heading-xxl: clamp(2rem, 2.5vw, 16rem); /* Heading 1*/
+  --heading-xxl: clamp(2rem, 5vw, 4rem); /* Heading 1*/
   --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
   --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
   --heading-m: clamp(1.1rem, 2.5vw, 1.4rem); /* Heading 3*/
@@ -61,9 +61,6 @@
 
 body {
   font-family: "Heebo", sans-serif;
-  display: flex;
-  flex-direction: column;
-  /* gap: var(--gap_3); */
 }
 
 .page-width {
@@ -135,7 +132,7 @@ body {
   background-color: var(--main_grey2);
   padding: var(--padding-m);
   min-height: 12rem;
-  transition: 300ms ease;
+  transition: var(--transition-1);
 }
 
 .ourbrands--grid {
@@ -150,7 +147,7 @@ body {
 
 .brand-logo {
   scale: 1;
-  transition: 300ms ease;
+  transition: var(--transition-1);
 
   min-width: 4rem;
   max-width: 10rem;
