@@ -65,6 +65,7 @@ body {
 
 .page-width {
   width: var(--page-width);
+  max-width: 1400px;
   margin: 0 auto;
   /* border: 1px dashed tomato; */
 }
@@ -80,8 +81,18 @@ body {
   cursor: pointer;
 }
 
+.hover-men-border:hover {
+  border: 6px solid var(--main_green);
+  transition: var(--transition-1);
+}
+
+.hover-women-border:hover {
+  border: 6px solid var(--main_pink);
+  transition: var(--transition-1);
+}
+
 .men-image {
-  background-image: url(/images/products/product-promo-men-sm.png);
+  background-image: url(/images/products/product-promo-men-ipad.png);
 }
 
 .women-image {
