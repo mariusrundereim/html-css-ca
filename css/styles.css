@@ -273,10 +273,6 @@ body {
 
 /********************* SINGLE PRODUCT *********************/
 
-.col--1 {
-  margin: 0 auto;
-}
-
 .jacket--preview-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
