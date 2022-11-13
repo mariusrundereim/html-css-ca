@@ -72,6 +72,10 @@ body {
 
 /********************* HOMEPAGE *********************/
 
+.fa-bag-shopping:hover {
+  color: var(--main_green);
+}
+
 .image-prop {
   width: 100%;
   min-height: 25rem;
@@ -323,20 +327,6 @@ body {
   width: 100%;
   margin-top: 1rem;
 }
-/* 
-.cart-sec-3-item {
-  border: var(--main_grey2) var(--border_small) solid;
-  display: grid;
-  grid-template-columns: 110px 1fr 1fr 220px;
-  grid-template-rows: auto;
-  padding: var(--padding-sm);
-  align-items: center;
-  transition: var(--transition-1);
-}
-
-.cart-sec-3-item:hover {
-  border: var(--main_green-dark) var(--border_small) solid;
-} */
 
 .addtocart-box {
   border: var(--main_grey2) var(--border_small) solid;
