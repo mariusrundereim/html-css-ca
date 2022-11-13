@@ -273,117 +273,36 @@ body {
 
 /********************* SINGLE PRODUCT *********************/
 
-.jacket--preview-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  border: 2px solid var(--main_grey1);
+.singlejacket-image {
+  width: clamp(18rem, 50%, 40rem);
+  min-height: 5rem;
 }
 
-.jacket--preview-item:nth-child(1) {
-  grid-row-start: 1;
-  grid-row-end: 4;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  outline: 2px solid var(--main_grey1);
+.img-prop {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.j-item-trans {
-  opacity: 50%;
-  transition: var(--transition-1);
+.color-box {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.j-item-trans:hover {
-  opacity: 100%;
+.color-1-tag {
+  background: rgb(227, 54, 54);
 }
 
-.col--2 {
-  display: grid;
-  align-items: baseline;
+.color-2-tag {
+  background: rgb(84, 214, 84);
 }
 
-.col--3 {
-  display: grid;
-  align-items: start;
+.color-3-tag {
+  background: rgb(92, 108, 118);
 }
 
-.col--4 {
-  min-height: 20rem;
-
-  display: grid;
-  justify-items: start;
-}
-
-.product-img-item {
-  width: 60%;
-}
-
-.price-tag {
-  background: var(--main_green);
-  display: inline-block;
-  padding: var(--padding-m);
-  font-size: var(--heading-sm);
-  color: var(--c-dark);
-  width: max-content;
-}
-
-/* Color Radio */
-
-.circle-prop {
-  font-size: 1.7rem;
-}
-
-.circle-prop:nth-child(1) {
-  color: #64a953;
-  outline: 3px solid rgba(0, 0, 0, 0);
-  outline-offset: 0px;
-  border-radius: 50px;
-  transition: 100ms ease;
-}
-
-.circle-prop:nth-child(1):hover {
-  outline: 3px solid rgba(0, 0, 0, 0.5);
-  outline-offset: 3px;
-}
-
-.circle-prop:nth-child(2) {
-  color: #4d378d;
-  outline: 3px solid rgba(0, 0, 0, 0);
-  outline-offset: 0px;
-  border-radius: 50px;
-  transition: 100ms ease;
-}
-
-.circle-prop:nth-child(2):hover {
-  outline: 3px solid rgba(0, 0, 0, 0.5);
-  outline-offset: 3px;
-}
-
-.circle-prop:nth-child(3) {
-  color: #ea6c6c;
-  outline: 3px solid rgba(0, 0, 0, 0);
-  outline-offset: 0px;
-  border-radius: 50px;
-  transition: 100ms ease;
-}
-
-.circle-prop:nth-child(3):hover {
-  outline: 3px solid rgba(0, 0, 0, 0.5);
-  outline-offset: 3px;
-}
-
-.circle-prop:nth-child(4) {
-  color: #53b4de;
-  outline: 3px solid rgba(0, 0, 0, 0);
-  outline-offset: 0px;
-  border-radius: 50px;
-  transition: 100ms ease;
-}
-
-.circle-prop:nth-child(4):hover {
-  outline: 3px solid rgba(0, 0, 0, 0.5);
-  outline-offset: 3px;
+.color-4-tag {
+  background: rgb(39, 39, 39);
 }
 
 /********************* ADD TO CART *********************/

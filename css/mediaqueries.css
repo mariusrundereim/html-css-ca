@@ -20,6 +20,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .grid-two-col-clean {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+
   /* Homepage */
 
   .hero-img-prop {
@@ -45,17 +51,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Single Jacket Page */
-
-  .jacket--preview-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
-  }
-
-  .jacket--preview-item:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
+  /********************* SINGLE PRODUCT *********************/
 
   /* Add to Cart */
 
@@ -143,23 +139,6 @@
   }
 
   /* Single Product Page */
-
-  .col--1 {
-    order: 1;
-  }
-
-  .col--2 {
-    order: 2;
-  }
-
-  .col--3 {
-    order: 4;
-  }
-
-  .col--4 {
-    justify-items: normal;
-    order: 3;
-  }
 
   /* Footer */
 
