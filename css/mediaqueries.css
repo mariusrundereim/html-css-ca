@@ -135,14 +135,16 @@
     gap: var(--padding-sm);
   }
 
-  .listofjackets-page-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   /* List of Jackets */
 
   .listofjackets-page-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Add to Cart */
+
+  .flex-gap-align {
+    flex-direction: column;
   }
 
   /* Single Product Page */

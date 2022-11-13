@@ -20,7 +20,7 @@
 .btn-submit:hover {
   color: var(--c-white);
   background: var(--main_green-dark);
-  border: var(--border_normal) var(--main_green-dark) solid;
+  border: var(--border_normal) var(--main_green) solid;
 }
 
 .btn-3 {
@@ -38,6 +38,22 @@
 
 .btn-3:hover {
   border: var(--border_normal) var(--main_grey1) solid;
+}
+
+.btn-addtocart {
+  background: var(--main_green);
+  width: max-content;
+  padding: var(--padding-m);
+  text-decoration: none;
+  color: var(--main_green-dark);
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: var(--transition-1);
+}
+
+.btn-addtocart:hover {
+  color: var(--c-white);
+  background: var(--main_green-dark);
 }
 
 .btn-result {
@@ -67,8 +83,10 @@
 
 .hr-line-small {
   border: 1px solid var(--main_green-dark);
+  background: var(--main_green-dark);
 }
 
 .hr-line-big {
   border: 2px solid var(--main_green-dark);
+  background: var(--main_green-dark);
 }
